@@ -1,0 +1,11 @@
+
+Results printed below are for Clasification Data set 3 Breast Cancer
+Accuracy for KNN is 56.42857142857143%
+Accuracy for SVM is 67.85714285714286%
+Accuracy for Decision Tree Classifier is 95.71428571428572%
+Accuracy for Random forest classification is 97.85714285714285%
+Accuracy for AdaBoost classification is 94.28571428571428%
+Accuracy for Logistic regression is 97.14285714285714%
+Accuracy for Gaussian naive Bayes classification is 74.28571428571429%
+Accuracy for Neural network classification is 39.285714285714285%
+Best classifier is Random Forest Classifier with 97.85% accuracy
