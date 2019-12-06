@@ -1,0 +1,11 @@
+
+Results printed below are for Clasification Data set 10 Seismic Bumps
+Accuracy for KNN is 92.84332688588007%
+Accuracy for Logistic regression is 92.84332688588007%
+Accuracy for SVM is 92.84332688588007%
+Accuracy for Decision Tree Classifier is 92.84332688588007%
+Accuracy for Random forest classification is 92.84332688588007%
+Accuracy for AdaBoost classification is 92.84332688588007%
+Accuracy for Gaussian naive Bayes classification is 88.20116054158608%
+Accuracy for Neural network classification is 92.84332688588007%
+Best classifier is Random Forest Classifier with 92.84% accuracy 
