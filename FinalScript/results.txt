@@ -1,0 +1,10 @@
+SVR Lowest MAE Score: 0.33954521683822225
+SVR With Parameters: {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+RandomForestRegressor Lowest MAE Score: 0.33656483956306776
+RandomForestRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01, 'n_estimators': 91}
+DecisionTreeRegressor Lowest MAE Score: 0.27523751683300113
+DecisionTreeRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.05}
+AdaBoostRegressor Lowest MAE Score:0.35307884732665845
+AdaBoostRegressor With Parameters:{'learning_rate': 0.01, 'loss': 'linear', 'n_estimators': 91}
+LinearRegressor Lowest MAE Score:0.27635335642735737
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': True, 'normalize': True}

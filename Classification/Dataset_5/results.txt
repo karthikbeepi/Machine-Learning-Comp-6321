@@ -1,0 +1,17 @@
+
+Results printed below are for Clasification Data set 5 Statlog German
+Accuracy for KNN is 69.5%
+Accuracy for Decision Tree Classifier is 74.0%
+Accuracy for Random forest classification is 73.5%
+Accuracy for AdaBoost classification is 75.5%
+
+Results printed below are for Clasification Data set 5 Statlog German
+Accuracy for KNN is 69.5%
+Accuracy for Decision Tree Classifier is 74.0%
+Accuracy for Random forest classification is 73.5%
+Accuracy for AdaBoost classification is 75.5%
+Accuracy for Neural network classification is 77.5%
+Accuracy for Logistic regression is 75.0%
+Accuracy for Gaussian naive Bayes classification is 71.0%
+Accuracy for SVM is 77.0%
+Best classifier is Neural network classification with 77.5% accuracy

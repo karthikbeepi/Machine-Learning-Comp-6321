@@ -1,0 +1,10 @@
+
+Results printed below are for Clasification Data set 8 Yeast
+Accuracy for KNN is 55.892255892255896%
+Accuracy for Logistic regression is 58.92255892255892%
+Accuracy for SVM is 54.54545454545454%
+Accuracy for Decision Tree Classifier is 60.26936026936027%
+Accuracy for Random forest classification is 61.61616161616161%
+Accuracy for AdaBoost classification is 51.85185185185185%
+Accuracy for Neural network classification is 47.13804713804714%
+Best classifier is Random Forest Classifier with 61.61% accuracy and accuracy for this particulaer could not be improved beyond this. (and the authors have also stated that 55% was the best accuracy they could achieve)

@@ -1,0 +1,10 @@
+Results printed below are for Clasification Data set 1 Diabetic Retinopathy
+Accuracy for KNN is 67.0%
+Accuracy for SVM is 74.5%
+Accuracy for Decision Tree Classifier is 64.5%
+Accuracy for Random forest classification is 63.5%
+Accuracy for AdaBoost classification is 66.0%
+Accuracy for Neural network classification is 73.0%
+Accuracy for Logistic regression is 73.5%
+Accuracy for Gaussian naive Bayes classification is 59.0%
+Best classifier is SVM with 74.5% accuracy

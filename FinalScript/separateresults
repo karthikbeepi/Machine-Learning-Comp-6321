@@ -1,0 +1,323 @@
+SGEMM GPU 9 
+
+Due to the strict 3 minute rule, we have skipped the k-fold validation for large datasets like these and skipped SVR
+now =2019-12-06 00:32:09.868278
+now =2019-12-06 00:32:10.056459
+now =2019-12-06 00:32:18.491212
+now =2019-12-06 00:32:19.810274
+now =2019-12-06 00:32:37.240416
+now =2019-12-06 00:32:43.724241
+now =2019-12-06 00:32:43.725241
+now =2019-12-06 00:32:43.725241
+According to our methods, Decision tree regressor gave us the lowest MSE on test data but as the train error is quite low it is unlikely that this is the best model. We suggest either Neural network Regressor or the Adaboost regressor which have comparable train and test accuracy(Neural Network = 51% and Adaboost = 58%)*******************************************************************************
+Results printed below are for Regression Data set SGEMM GPU
+*******************************************************************************
+
+
+LinearRegressor MSE Score for training data: 0.3984555419443505
+LinearRegressor With Parameters: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
+LinearRegressor coefficient of determination R^2 on test data: 0.3984555419443505
+MSE for LinearRegressor on test set: 176.4096399473851
+RandomForestRegressor MSE Score for training data: 0.7687648450530112
+RandomForestRegressor With Parameters: RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=10,
+                      n_jobs=None, oob_score=False, random_state=0, verbose=0,
+                      warm_start=False)
+RandomForestRegressor coefficient of determination R^2 on test data: 0.7687648450530112
+MSE for RandomForestRegressor on test set: 62.13509373700895
+DecisionTreeRegressor MSE Score for training data: 0.6616907633999174
+DecisionTreeRegressor With Parameters: DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=0, splitter='best')
+DecisionTreeRegressor coefficient of determination R^2 on test data: 0.6616907633999174
+MSE for DecisionTreeRegressor on test set: 74.08070761589404
+AdaBoostRegressor MSE Score for training data: 0.43155299936590774
+AdaBoostRegressor With Parameters: AdaBoostRegressor(base_estimator=None, learning_rate=1.0, loss='linear',
+                  n_estimators=50, random_state=0)
+AdaBoostRegressor coefficient of determination R^2 on test data: 0.43155299936590774
+MSE for AdaBoostRegressor on test set: 204.62249725020666
+NeuralNetworkRegressor MSE Score for training data: 0.8907464449652507
+NeuralNetworkRegressor With Parameters: MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+             beta_2=0.999, early_stopping=False, epsilon=1e-08,
+             hidden_layer_sizes=(100,), learning_rate='constant',
+             learning_rate_init=0.001, max_iter=200, momentum=0.9,
+             n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+             random_state=0, shuffle=True, solver='adam', tol=0.0001,
+             validation_fraction=0.1, verbose=False, warm_start=False)
+NeuralNetworkRegressor
+
+Results printed below are for Regression Data set 8 Concrete Cement
+*******************************************************************************
+
+
+LinearRegressor MSE Score for training data: 0.5983842026106251
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': False, 'normalize': True}
+Linear Regressor coefficient of determination R^2 on test data: 0.6253050860694727
+MSE for LinearRegressor on test set: 7.753813662968192
+RandomForestRegressor MSE Score for training data: 0.8508948848124094
+RandomForestRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01, 'n_estimators': 76}
+Random Forest coefficient of determination R^2 on test data: 0.8645058710977955
+MSE for Random Forest Regressor on test set: 4.413734763789442
+DecisionTreeRegressor MSE Score for training data: 0.7727221652459776
+DecisionTreeRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01}
+Decision Tree coefficient of determination R^2 on test data: 0.7551143913409564
+MSE for Decision Tree Regressor on test set: 5.779460722422067
+AdaBoostRegressor MSE Score for training data: 0.8823339132788914
+AdaBoostRegressor With Parameters:{'learning_rate': 0.3, 'loss': 'exponential', 'n_estimators': 51}
+AdaBoost Regressor coefficient of determination R^2 on test data: 0.884895944154395
+MSE for AdaBoost Regressor on test set: 3.4653472253685376
+NeuralNetworkRegressor MSE Score for training data: 0.6042899532042102
+NeuralNetworkRegressor With Parameters:{'activation': 'relu', 'hidden_layer_sizes': (10, 5)}
+Neural Network Regressor coefficient of determination R^2 on test data: 0.633072426210267
+MSE for NeuralNetwork Regressor on test set: 7.627251704295732
+SVR MSE Score for training data: 0.11371902719393712
+SVR With Parameters: SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1,
+    gamma='auto_deprecated', kernel='rbf', max_iter=-1, shrinking=True,
+    tol=0.001, verbose=False)
+SVR coefficient of determination R^2 on test data: 0.028036345931712114
+MSE for SVR on test set: 12.678893497715691
+
+7 dataset
+now =2019-12-06 00:40:49.140745
+now =2019-12-06 00:40:51.565478
+now =2019-12-06 00:40:58.080948
+now =2019-12-06 00:40:58.348788
+now =2019-12-06 00:41:00.478424
+now =2019-12-06 00:41:02.797744
+now =2019-12-06 00:41:02.941537
+RandomForestRegressor MAE Score for training data: 0.9887846583705294
+RandomForestRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01, 'n_estimators': 46}
+Random Forest coefficient of determination R^2 on test data: 0.9896469275372656
+MAE for Random Forest Regressor on test set: 8.544405206274112
+DecisionTreeRegressor MAE Score for training data: 0.9886167094185685
+DecisionTreeRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01}
+Decision Tree coefficient of determination R^2 on test data: 0.9889100112900997
+MAE for Decision Tree Regressor on test set: 10.334077793834684
+AdaBoostRegressor MAE Score for training data: 0.9995518496584129
+AdaBoostRegressor With Parameters:{'learning_rate': 0.3, 'loss': 'square', 'n_estimators': 91}
+AdaBoost Regressor coefficient of determination R^2 on test data: 0.9995472713574848
+MAE for AdaBoost Regressor on test set: 1.3369773686229383
+LinearRegressor MAE Score for training data: 1.0
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': True, 'normalize': True}
+Linear Regressor coefficient of determination R^2 on test data: 1.0
+MAE for LinearRegressor on test set: 1.2386920539280418e-13
+NeuralNetworkRegressor MAE Score for training data: 0.9999999334902882
+NeuralNetworkRegressor With Parameters:{'activation': 'relu', 'hidden_layer_sizes': 5}
+Neural Network Regressor coefficient of determination R^2 on test data: 0.9999999233300184
+MAE for NeuralNetwork Regressor on test set: 0.0164276939362024
+
+
+6 Portuguese
+
+now =2019-12-06 00:40:49.140745
+now =2019-12-06 00:40:51.565478
+now =2019-12-06 00:40:58.080948
+now =2019-12-06 00:40:58.348788
+now =2019-12-06 00:41:00.478424
+now =2019-12-06 00:41:02.797744
+now =2019-12-06 00:41:02.941537
+RandomForestRegressor MAE Score for training data: 0.9887846583705294
+RandomForestRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01, 'n_estimators': 46}
+Random Forest coefficient of determination R^2 on test data: 0.9896469275372656
+MAE for Random Forest Regressor on test set: 8.544405206274112
+DecisionTreeRegressor MAE Score for training data: 0.9886167094185685
+DecisionTreeRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01}
+Decision Tree coefficient of determination R^2 on test data: 0.9889100112900997
+MAE for Decision Tree Regressor on test set: 10.334077793834684
+AdaBoostRegressor MAE Score for training data: 0.9995518496584129
+AdaBoostRegressor With Parameters:{'learning_rate': 0.3, 'loss': 'square', 'n_estimators': 91}
+AdaBoost Regressor coefficient of determination R^2 on test data: 0.9995472713574848
+MAE for AdaBoost Regressor on test set: 1.3369773686229383
+LinearRegressor MAE Score for training data: 1.0
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': True, 'normalize': True}
+Linear Regressor coefficient of determination R^2 on test data: 1.0
+MAE for LinearRegressor on test set: 1.2386920539280418e-13
+NeuralNetworkRegressor MAE Score for training data: 0.9999999334902882
+NeuralNetworkRegressor With Parameters:{'activation': 'relu', 'hidden_layer_sizes': 5}
+Neural Network Regressor coefficient of determination R^2 on test data: 0.9999999233300184
+MAE for NeuralNetwork Regressor on test set: 0.0164276939362024
+RandomForestRegressor MSE Score for training data: 0.9969073660920258
+RandomForestRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01, 'n_estimators': 31}
+Random Forest coefficient of determination R^2 on test data: 0.9993451138732639
+MSE for Random Forest Regressor on test set: 0.01747439626815307
+DecisionTreeRegressor MSE Score for training data: 0.9987092815632715
+DecisionTreeRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01}
+Decision Tree coefficient of determination R^2 on test data: 0.9974678060460416
+MSE for Decision Tree Regressor on test set: 0.02672119972733469
+AdaBoostRegressor MSE Score for training data: 0.9994333281738214
+AdaBoostRegressor With Parameters:{'learning_rate': 0.01, 'loss': 'exponential', 'n_estimators': 31}
+AdaBoost Regressor coefficient of determination R^2 on test data: 0.9986405904674533
+MSE for AdaBoost Regressor on test set: 0.012269938650306749
+LinearRegressor MSE Score for training data: 1.0
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': True, 'normalize': True}
+Linear Regressor coefficient of determination R^2 on test data: 1.0
+MSE for LinearRegressor on test set: 1.9928308225114357e-15
+NeuralNetworkRegressor MSE Score for training data: 0.995897857860558
+NeuralNetworkRegressor With Parameters:{'activation': 'relu', 'hidden_layer_sizes': (10, 5)}
+Neural Network Regressor coefficient of determination R^2 on test data: 0.9979929547185079
+MSE for NeuralNetwork Regressor on test set: 0.06047700473660167
+SVR MSE Score for training data: 0.9997892806783509
+SVR With Parameters: {'C': 0.1, 'gamma': 0.001, 'kernel': 'linear'}
+SVR coefficient of determination R^2 on test data: 0.999793876307538
+MSE for SVR on test set: 0.03597324417908004
+
+*******************************************************************************
+Results printed below are for Regression Data set 6 Student Portuguese
+*******************************************************************************
+
+
+now =2019-12-06 00:52:04.503067
+now =2019-12-06 00:52:04.503067
+now =2019-12-06 00:52:10.155727
+now =2019-12-06 00:52:10.264659
+now =2019-12-06 00:52:10.973781
+now =2019-12-06 00:52:11.107420
+now =2019-12-06 00:52:15.356704
+now =2019-12-06 00:52:15.356704
+now =2019-12-06 00:52:30.409346*******************************************************************************
+Results printed below are for Regression Data set 5 Facebook Metrics
+*******************************************************************************
+
+
+SVR MSE Score for training data: 0.21715956274394946
+SVR With Parameters: {'C': 1, 'gamma': 0.001, 'kernel': 'linear'}
+SVR coefficient of determination R^2 on test data: 0.26778178814314046
+MSE for SVR on test set: 58.46478928283461
+RandomForestRegressor MSE Score for training data: 0.5405804023908016
+RandomForestRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.02, 'n_estimators': 31}
+Random Forest coefficient of determination R^2 on test data: 0.5725882659197108
+MSE for Random Forest Regressor on test set: 43.52045279333443
+DecisionTreeRegressor MSE Score for training data: 0.3550568110302426
+DecisionTreeRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.04}
+Decision Tree coefficient of determination R^2 on test data: 0.4192604923455941
+MSE for Decision Tree Regressor on test set: 50.29003208495938
+AdaBoostRegressor MSE Score for training data: 0.5211246338515697
+AdaBoostRegressor With Parameters:{'learning_rate': 0.1, 'loss': 'square', 'n_estimators': 91}
+AdaBoost Regressor coefficient of determination R^2 on test data: 0.5642553210611179
+MSE for AdaBoost Regressor on test set: 44.49664429530201
+LinearRegressor MSE Score for training data: 0.730770892131604
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': True, 'normalize': True}
+Linear Regressor coefficient of determination R^2 on test data: 0.8379849998585349
+MSE for LinearRegressor on test set: 23.866803011590118
+NeuralNetworkRegressor MSE Score for training data: 0.7952146662362591
+NeuralNetworkRegressor With Parameters:{'activation': 'relu', 'hidden_layer_sizes': 1}
+Neural Network Regressor coefficient of determination R^2 on test data: 0.8384671677797995
+MSE for NeuralNetwork Regressor on test set: 23.781706207763325
+
+4 dataset
+now =2019-12-06 00:53:34.042708
+now =2019-12-06 00:53:34.166796
+now =2019-12-06 00:53:35.907431
+now =2019-12-06 00:53:35.957297
+now =2019-12-06 00:53:40.145537
+now =2019-12-06 00:53:40.192396
+now =2019-12-06 00:53:42.866187
+SVR Lowest MAE Score: -0.1160127949294983
+SVR With Parameters: {'C': 1, 'gamma': 0.001, 'kernel': 'linear'}
+RandomForestRegressor Lowest MAE Score: 0.1452367049715333
+RandomForestRegressor With Parameters: {'max_features': 'sqrt', 'min_samples_leaf': 0.01, 'n_estimators': 91}
+DecisionTreeRegressor Lowest MAE Score: 0.020286975043121713
+DecisionTreeRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.05}
+AdaBoostRegressor Lowest MAE Score:0.01332830744651407
+AdaBoostRegressor With Parameters:{'learning_rate': 0.3, 'loss': 'exponential', 'n_estimators': 91}
+LinearRegressor Lowest MAE Score:0.03093412428452299
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': True, 'normalize': True}
+NeuralNetworkRegressor Lowest MAE Score:0.11023380313520244
+NeuralNetworkRegressor With Parameters:{'activation': 'logistic', 'alpha': 0.002, 'hidden_layer_sizes': 10, 'learning_rate': 'constant', 'learning_rate_init': 0.01}
+GaussianRegressor Lowest MAE Score:-0.679044638185727
+GaussianRegressor With Parameters:{'kernel': 1**2 * RationalQuadratic(alpha=0.1, length_scale=1)}
+
+*******************************************************************************
+Results printed below are for Regression Data set 3 Parkinson speech
+*******************************************************************************
+
+
+now =2019-12-06 00:55:41.877069
+now =2019-12-06 00:55:42.281926
+now =2019-12-06 00:55:45.519775
+now =2019-12-06 00:55:45.590586
+now =2019-12-06 00:55:55.630088
+now =2019-12-06 00:55:55.680021
+now =2019-12-06 00:56:59.584131
+now =2019-12-06 00:57:00.267784
+MAE for SVR: 11.448620103634207
+MAE for Decision Tree Regressor: 12.627161794130167
+MAE for Random Forest Regressor: 11.98479400099234
+MAE for AdaBoost Regressor: 13.03395157168442
+MAE for Linear Regressor: 12.793074256156881
+MAE for Neural Network Regressor: 12.399852603199063
+MAE for Gaussian Regressor: 12.934615384615384
+SVR Lowest MSE Score: 0.41907102558228887
+SVR With Parameters: {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+RandomForestRegressor Lowest MSE Score: 0.49149615742767105
+RandomForestRegressor With Parameters: {'max_features': 'sqrt', 'min_samples_leaf': 0.01, 'n_estimators': 61}
+DecisionTreeRegressor Lowest MSE Score: 0.3357488009986752
+DecisionTreeRegressor With Parameters: {'max_features': 'sqrt', 'min_samples_leaf': 0.05}
+AdaBoostRegressor Lowest MSE Score:0.4895317123441525
+AdaBoostRegressor With Parameters:{'learning_rate': 0.01, 'loss': 'linear', 'n_estimators': 61}
+LinearRegressor Lowest MSE Score:0.39552936263224786
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': True, 'normalize': False}
+NeuralNetworkRegressor Lowest MSE Score:0.45294720499551683
+NeuralNetworkRegressor With Parameters:{'activation': 'logistic', 'alpha': 0.0001, 'hidden_layer_sizes': 10, 'learning_rate': 'constant', 'learning_rate_init': 0.01}
+GaussianRegressor Lowest MSE Score:0.4765850998813653
+GaussianRegressor With Parameters:{'kernel': 1**2 * RationalQuadratic(alpha=0.1, length_scale=1)}
+
+*******************************************************************************
+Results printed below are for Regression Data set 2 Communities
+*******************************************************************************
+
+Nonestate                     0
+county                 1174
+community              1177
+communityname             0
+fold                      0
+                       ... 
+LemasPctPolicOnPatr    1675
+LemasGangUnitDeploy    1675
+LemasPctOfficDrugUn       0
+PolicBudgPerPop        1675
+ViolentCrimesPerPop       0
+Length: 128, dtype: int64
+Total Number of records:1994
+Number of cols with missing values:23
+Dataset variance percentage retained: 97.11354469384253
+now =2019-12-06 00:59:27.177816
+now =2019-12-06 00:59:28.099942
+now =2019-12-06 00:59:37.943843
+now =2019-12-06 00:59:38.052535
+now =2019-12-06 01:00:33.810334
+now =2019-12-06 01:00:33.859295
+now =2019-12-06 01:00:34.688571
+SVR MAE Score for training data: 0.6470477838246239
+SVR With Parameters: {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+SVR coefficient of determination R^2 on test data: -0.09839115956087618
+MAE for SVR on test set: 0.1675074571891253
+RandomForestRegressor MAE Score for training data: 0.6042085059617369
+RandomForestRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.01, 'n_estimators': 91}
+Random Forest coefficient of determination R^2 on test data: 0.10501618467724105
+MAE for Random Forest Regressor on test set: 0.16080856477716488
+DecisionTreeRegressor MAE Score for training data: 0.472354019043511
+DecisionTreeRegressor With Parameters: {'max_features': 'auto', 'min_samples_leaf': 0.03}
+Decision Tree coefficient of determination R^2 on test data: 0.12256300326436653
+MAE for Decision Tree Regressor on test set: 0.14860434588787622
+AdaBoostRegressor MAE Score for training data: 0.6130101527070078
+AdaBoostRegressor With Parameters:{'learning_rate': 0.3, 'loss': 'square', 'n_estimators': 91}
+AdaBoost Regressor coefficient of determination R^2 on test data: 0.023721547286331357
+MAE for AdaBoost Regressor on test set: 0.18015174506828527
+LinearRegressor MAE Score for training data: 0.6420802993698864
+LinearRegressor With Parameters:{'copy_X': True, 'fit_intercept': True, 'normalize': False}
+Linear Regressor coefficient of determination R^2 on test data: -0.15389571793767964
+MAE for LinearRegressor on test set: 0.16112341329407473
+NeuralNetworkRegressor MAE Score for training data: 0.6029487510838192
+NeuralNetworkRegressor With Parameters:{'activation': 'relu', 'hidden_layer_sizes': (10, 5)}
+Neural Network Regressor coefficient of determination R^2 on test data: -0.6674865665144609
+MAE for NeuralNetwork Regressor on test set: 0.2008103732727745
+GaussianRegressor MAE Score for training data: 0.6637752547401503
+GaussianRegressor With Parameters:{'kernel': 1**2 * RationalQuadratic(alpha=0.1, length_scale=1)}
+Gaussian Regressor coefficient of determination R^2 on test data: -0.09020206923798724
+MAE for Gaussian Regressor on test set: 0.16598068777647568
